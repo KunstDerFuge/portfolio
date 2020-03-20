@@ -41,7 +41,8 @@ const useStyles = makeStyles((theme) =>
       fontFeatureSettings: '"liga", "clig"'
     },
     projects: {
-      padding: theme.spacing(5)
+      marginTop: theme.spacing(5),
+      marginBottom: theme.spacing(5)
     },
     sectionPaper: {
       margin: theme.spacing(5),
