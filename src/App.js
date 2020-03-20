@@ -122,7 +122,7 @@ const useStyles = makeStyles((theme) =>
     technologyHeader: {
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
-      fontFeatureSettings: '"liga", "clig"',
+      fontFeatureSettings: '"liga", "clig", "swsh"',
       fontStyle: 'italic',
       paddingTop: theme.spacing(2)
     },
