@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) =>
       fontFamily: 'garamond-premier-pro, serif',
       fontStyle: 'italic',
       fontVariantLigatures: 'common-ligatures',
-      fontFeatureSettings: '"liga", "clig"'
+      fontFeatureSettings: '"liga", "clig", "swsh"'
     },
     subHeader: {
       fontFamily: 'garamond-premier-pro, serif',
@@ -152,7 +152,7 @@ const useStyles = makeStyles((theme) =>
       color: '#fff',
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
-      fontFeatureSettings: '"liga", "clig"',
+      fontFeatureSettings: '"liga", "clig", "swsh"',
       fontStyle: 'italic',
       fontSize: '1.5em',
       marginLeft: theme.spacing(4),
