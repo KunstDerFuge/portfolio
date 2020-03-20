@@ -58,6 +58,10 @@ const useStyles = makeStyles((theme) =>
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"'
     },
+    ornament: {
+      fontFamily: 'garamond-premier-pro, serif',
+      margin: '15vh'
+    },
     bioHeader: {
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
@@ -84,7 +88,6 @@ const useStyles = makeStyles((theme) =>
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
       marginTop: theme.spacing(2),
-      marginBottom: '40vh',
       marginLeft: 'auto',
       marginRight: 'auto',
       fontSize: '1.4em',
@@ -218,6 +221,9 @@ function App () {
           </Typography>
           <Typography className={classes.bioLast} align='center'>
             I love simple, functional design with great UX.
+          </Typography>
+          <Typography className={classes.ornament} align='center' variant='h2'>
+            ❦
           </Typography>
         </Grid>
       </Grid>
