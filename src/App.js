@@ -30,11 +30,15 @@ const useStyles = makeStyles((theme) =>
       margin: theme.spacing(5)
     },
     title: {
-      fontFamily: 'garamond-premier-pro, serif'
+      fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig'
     },
     subTitle: {
       fontFamily: 'garamond-premier-pro, serif',
-      fontStyle: 'italic'
+      fontStyle: 'italic',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig'
     },
     projects: {
       padding: theme.spacing(5)
@@ -45,20 +49,30 @@ const useStyles = makeStyles((theme) =>
     },
     header: {
       fontFamily: 'garamond-premier-pro, serif',
-      fontStyle: 'italic'
+      fontStyle: 'italic',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig'
     },
     subHeader: {
-      fontFamily: 'garamond-premier-pro, serif'
+      fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig'
     },
     bioHeader: {
       fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig',
       marginTop: '10vh'
     },
     bioSubHeader: {
-      fontFamily: 'garamond-premier-pro, serif'
+      fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig'
     },
     bio: {
       fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig',
       marginTop: theme.spacing(15),
       marginLeft: 'auto',
       marginRight: 'auto',
@@ -67,6 +81,8 @@ const useStyles = makeStyles((theme) =>
     },
     bioLast: {
       fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig',
       marginTop: theme.spacing(2),
       marginBottom: '40vh',
       marginLeft: 'auto',
@@ -76,11 +92,15 @@ const useStyles = makeStyles((theme) =>
     },
     projectBody: {
       fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig',
       fontSize: '1.4em',
       paddingTop: theme.spacing(2)
     },
     timeline: {
       fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig',
       fontStyle: 'italic',
       fontSize: '1.2em'
     },
@@ -97,11 +117,15 @@ const useStyles = makeStyles((theme) =>
     },
     technologyHeader: {
       fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig',
       fontStyle: 'italic',
       paddingTop: theme.spacing(2)
     },
     technologyItem: {
       fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig',
       fontSize: '1.3em',
       marginLeft: theme.spacing(2),
       width: '100%'
@@ -178,7 +202,7 @@ function App () {
         </Paper>
       </Grid>
       <Grid item id='bio'>
-        <Typography className={classes.bioHeader} align='center' variant='h3'>
+        <Typography className={classes.bioHeader} align='center' variant='h2'>
           Hi! I'm Robert (or Bobby).
         </Typography>
         <Typography className={classes.bioSubHeader} align='center' variant='h5'>
