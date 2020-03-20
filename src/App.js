@@ -177,8 +177,7 @@ function App () {
           </Grid>
         </Paper>
       </Grid>
-      <a name='bio' />
-      <Grid item>
+      <Grid item id='bio'>
         <Typography className={classes.bioHeader} align='center' variant='h3'>
           Hi! I'm Robert (or Bobby).
         </Typography>
@@ -196,8 +195,7 @@ function App () {
           </Typography>
         </Grid>
       </Grid>
-      <a name='projects' />
-      <Grid item container direction='column' className={classes.projects}>
+      <Grid id='projects' item container direction='column' className={classes.projects}>
         <Typography className={classes.header} variant='h3' align='center'>
           Projects:
         </Typography>
@@ -247,7 +245,7 @@ function App () {
               </Grid>
             </Grid>
             <Grid item sm={12} md={6}>
-              <img src='typometry.gif' className={classes.gif} />
+              <img src='typometry.gif' alt='Animated GIF of typing practice with Typometry' className={classes.gif} />
             </Grid>
           </Grid>
         </Paper>
@@ -277,8 +275,9 @@ function App () {
                   </Tooltip>
                 </Grid>
               </Grid>
-              <a target='_blank' href='https://play.google.com/store/apps/details?id=io.eferret.eferret'>
-                <img className={classes.imageButton} src='google-play.png' />
+              <a target='_blank' href='https://play.google.com/store/apps/details?id=io.eferret.eferret'
+                 rel="noopener noreferrer">
+                <img className={classes.imageButton} alt='Get it on Google Play' src='google-play.png' />
               </a>
               <Typography variant='body1' className={classes.projectBody}>
                 eFerret is a native Android app and modern web app (eFerret.io) for finding great deals and rare items
@@ -286,7 +285,6 @@ function App () {
                 after they are posted.
               </Typography>
               <ul className={classes.technologyItem}>
-                <li>Uses Celery / Redis task scheduling for push notification processing</li>
                 <li>1000+ installs on Google Play</li>
                 <li>~ 75 daily active users, 250 monthly</li>
                 <li>Drives over $450,000 in sales to eBay every year</li>
@@ -308,10 +306,13 @@ function App () {
                 <Typography className={classes.technologyItem} variant='subtitle1'>
                   Django
                 </Typography>
+                <Typography className={classes.technologyItem}>
+                  Celery / Redis task scheduling for push notification processing
+                </Typography>
               </Grid>
             </Grid>
             <Grid item sm={12} md={6}>
-              <img src='eferret.gif' className={classes.gif} />
+              <img src='eferret.gif' alt='Animated GIF of the eFerret Android app' className={classes.gif} />
             </Grid>
           </Grid>
         </Paper>
@@ -346,7 +347,7 @@ function App () {
                 "Project Heatwave" - A data-driven analysis of global warming using atmospheric radiation emission
                 data from NASA's AIRS program. This project gathers and analyzes a large dataset from the NASA AIRS
                 satellite using Pandas and Numpy. Heatwave is a fully open-source project by <a
-                href='https://www.chrisrentsch.com' target='_blank'>Chris Rentsch</a>.
+                href='https://www.chrisrentsch.com' target='_blank' rel="noopener noreferrer">Chris Rentsch</a>.
               </Typography>
               <ul className={classes.technologyItem}>
                 <li>Implemented major feature additions and bug fixes over the course of 14 months</li>
@@ -368,7 +369,8 @@ function App () {
               </Grid>
             </Grid>
             <Grid item sm={12} md={6}>
-              <img src='heatwave.gif' className={classes.gif} />
+              <img src='heatwave.gif' alt='Animated GIF of Heatwave being used from the command line'
+                   className={classes.gif} />
             </Grid>
           </Grid>
         </Paper>
