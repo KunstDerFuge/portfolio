@@ -102,7 +102,7 @@ const useStyles = makeStyles((theme) =>
     },
     technologyItem: {
       fontFamily: 'garamond-premier-pro, serif',
-      fontSize: '1.2em',
+      fontSize: '1.3em',
       marginLeft: theme.spacing(2),
       width: '100%'
     },
