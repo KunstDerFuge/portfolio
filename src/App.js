@@ -151,6 +151,8 @@ const useStyles = makeStyles((theme) =>
     link: {
       color: '#fff',
       fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: 'liga, clig',
       fontStyle: 'italic',
       fontSize: '1.5em',
       marginLeft: theme.spacing(4),
