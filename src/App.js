@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) =>
       marginTop: theme.spacing(15),
       marginLeft: 'auto',
       marginRight: 'auto',
-      fontSize: '1.2em',
+      fontSize: '1.4em',
       width: '60vw'
     },
     bioLast: {
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) =>
       marginBottom: '40vh',
       marginLeft: 'auto',
       marginRight: 'auto',
-      fontSize: '1.2em',
+      fontSize: '1.4em',
       width: '60vw'
     },
     projectBody: {
@@ -142,12 +142,12 @@ function App () {
   const [avatarElevation, setAvatarElevation] = React.useState(0)
   useEffect(() => {
     let avatarFloatInterval = setInterval(() => {
-      if (avatarElevation < 14) {
-        setAvatarElevation(14)
+      if (avatarElevation < 16) {
+        setAvatarElevation(16)
       } else {
         setAvatarElevation(10)
       }
-    }, 500)
+    }, 750)
     return () => clearInterval(avatarFloatInterval)
   })
   return (
