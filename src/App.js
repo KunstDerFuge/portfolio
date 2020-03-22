@@ -113,7 +113,9 @@ const useStyles = makeStyles((theme) =>
       maxWidth: '700px',
       width: '100%',
       display: 'table-cell',
-      verticalAlign: 'middle'
+      verticalAlign: 'middle',
+      marginTop: theme.spacing(2),
+      marginBottom: theme.spacing(2),
     },
     descriptionContainer: {},
     technology: {
