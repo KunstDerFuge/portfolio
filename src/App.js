@@ -182,8 +182,8 @@ function App () {
   const [avatarElevation, setAvatarElevation] = React.useState(0)
   useEffect(() => {
     let avatarFloatInterval = setInterval(() => {
-      if (avatarElevation < 16) {
-        setAvatarElevation(16)
+      if (avatarElevation < 18) {
+        setAvatarElevation(18)
       } else {
         setAvatarElevation(10)
       }
