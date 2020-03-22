@@ -342,7 +342,7 @@ function App () {
                   Frontend:
                 </Typography>
                 <Typography className={classes.technologyItem} variant='subtitle1'>
-                  React (web)
+                  React + Typescript (web)
                 </Typography>
                 <Typography className={classes.technologyItem} variant='subtitle1'>
                   Java (Android)
