@@ -223,7 +223,7 @@ function App () {
         </Typography>
         <Grid item alignContent='center'>
           <Typography className={classes.bio} align='center'>
-            I originally spent a few years pursuing a degree in music, before deciding my interest in computer science
+            I spent a few years pursuing a degree in music, before deciding my interest in computer science
             and programming was more than just a hobby. A few toy projects and one Barnes-Hut N-body simulator later, I
             decided to pursue programming with a renewed vigor.
           </Typography>
