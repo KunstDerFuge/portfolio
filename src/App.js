@@ -345,7 +345,7 @@ function App () {
                   Backend:
                 </Typography>
                 <Typography className={classes.technologyItem} variant='subtitle1'>
-                  Django
+                  Django + Django Rest Framework
                 </Typography>
                 <Typography className={classes.technologyItem}>
                   Celery / Redis task scheduling for push notification processing
