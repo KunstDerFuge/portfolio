@@ -67,7 +67,8 @@ const useStyles = makeStyles((theme) =>
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
-      marginTop: '10vh'
+      marginTop: '10vh',
+      marginBottom: theme.spacing(2)
     },
     bioSubHeader: {
       fontFamily: 'garamond-premier-pro, serif',
