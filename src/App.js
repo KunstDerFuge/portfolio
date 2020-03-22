@@ -258,11 +258,18 @@ function App () {
                   </Tooltip>
                 </Grid>
               </Grid>
-              <Typography variant='body1' className={classes.projectBody}>
-                Typometry is a web app for improving typing speed at all levels by assessing typing characteristics and
-                seamlessly delivering personalized exercises.
-              </Typography>
-              <Grid item className={classes.spacer} />
+              <Grid item>
+                <Typography variant='body1' className={classes.projectBody}>
+                  Typometry is a web app for improving typing speed at all levels by assessing typing characteristics
+                  and seamlessly delivering personalized exercises.
+                </Typography>
+                <Typography variant='body1' className={classes.projectBody}>
+                  Typometry is my attempt at hacking touch typing. As the backend receives granular typing data,
+                  simple, corrective exercises are generated in realtime to fix the "weakest link" in the user's typing
+                  technique. This way, a typist with a non-traditional typing style does not have to start from scratch
+                  learning which fingers go where.
+                </Typography>
+              </Grid>
               <Grid item className={classes.technology}>
                 <Typography className={classes.technologyHeader} variant='h5'>
                   Frontend:
