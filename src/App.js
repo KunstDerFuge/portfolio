@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) =>
       marginRight: 'auto',
       borderRadius: theme.spacing(1),
       marginTop: theme.spacing(10),
-      transition: 'box-shadow 750ms cubic-bezier(0.4, 0, 0.2, 1) 0ms'
+      transition: 'box-shadow 750ms cubic-bezier(.45,.05,.55,.95) 0ms'
     },
     profile: {
       width: theme.spacing(30),
