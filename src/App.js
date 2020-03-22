@@ -153,6 +153,12 @@ const useStyles = makeStyles((theme) =>
     headerGrid: {
       height: '100%'
     },
+    footer: {
+      borderRadius: 0,
+      backgroundColor: '#444',
+      height: theme.spacing(30),
+      boxShadow: 10
+    },
     link: {
       color: '#fff',
       fontFamily: 'garamond-premier-pro, serif',
@@ -183,7 +189,7 @@ function App () {
   })
   return (
     <Grid container className={classes.root} alignItems='space-around' direction='column'>
-      <Paper className={classes.topHeader}>
+      <Paper className={classes.topHeader} elevation={6}>
         <Grid container className={classes.headerGrid} alignItems='center'>
           <Grid item container justify='center'>
             <Link className={classes.link}
@@ -416,6 +422,19 @@ function App () {
           </Grid>
         </Paper>
       </Grid>
+      <Paper className={classes.footer} elevation={6}>
+        <Grid container className={classes.headerGrid} alignItems='center'>
+          <Grid item container justify='center'>
+            <Link className={classes.link}
+                  href='https://github.com/KunstDerFuge'>Github</Link>
+            <Link className={classes.link} href='https://www.linkedin.com/in/robert-amour-5716b3105/'>LinkedIn</Link>
+            <Link className={classes.link} href='Robert-Amour-resume.pdf'>Resume</Link>
+          </Grid>
+          <Grid item container justify='center'>
+            <Link className={classes.link} href='#'>Back to top</Link>
+          </Grid>
+        </Grid>
+      </Paper>
     </Grid>
   )
 }
