@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) =>
       marginRight: 'auto',
       borderRadius: theme.spacing(1),
       marginTop: theme.spacing(10),
-      transition: 'box-shadow 750ms cubic-bezier(.45,.05,.55,.95) 0ms'
+      transition: 'box-shadow 1000ms cubic-bezier(.45,.05,.55,.95) 0ms'
     },
     profile: {
       width: theme.spacing(30),
@@ -187,7 +187,7 @@ function App () {
       } else {
         setAvatarElevation(10)
       }
-    }, 750)
+    }, 1000)
     return () => clearInterval(avatarFloatInterval)
   })
   return (
