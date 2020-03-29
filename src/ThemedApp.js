@@ -37,7 +37,7 @@ function ThemedApp () {
   return (
     <div>
       <ThemeProvider theme={ useDarkTheme ? darkTheme : lightTheme }>
-        <App darkThemeSwitch={() => setUseDarkTheme(!useDarkTheme)} />
+        <App darkThemeSwitch={() => setUseDarkTheme(!useDarkTheme)} isDark={useDarkTheme} />
       </ThemeProvider>
     </div>
   )
