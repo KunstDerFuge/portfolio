@@ -295,8 +295,8 @@ function App () {
               </Grid>
             </Grid>
             <Grid item sm={ 12 } md={ 6 }>
-              <video controls autoPlay>
-                <source src='typometry.webm' type='video/webm' className={ classes.gif } />
+              <video autoPlay loop muted className={classes.gif}>
+                <source src='typometry.webm' type='video/webm' />
               </video>
             </Grid>
           </Grid>
@@ -364,8 +364,8 @@ function App () {
               </Grid>
             </Grid>
             <Grid item sm={ 12 } md={ 6 }>
-              <video controls autoPlay>
-                <source src='eferret.webm' type='video/webm' className={ classes.gif } />
+              <video autoPlay loop muted className={classes.gif}>
+                <source src='eferret.webm' type='video/webm' />
               </video>
             </Grid>
           </Grid>
@@ -423,8 +423,8 @@ function App () {
               </Grid>
             </Grid>
             <Grid item sm={ 12 } md={ 6 }>
-              <video controls autoPlay>
-                <source src='heatwave.webm' type='video/webm' className={ classes.gif } />
+              <video autoPlay loop muted className={classes.gif}>
+                <source src='heatwave.webm' type='video/webm' />
               </video>
             </Grid>
           </Grid>
