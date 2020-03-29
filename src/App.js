@@ -265,7 +265,7 @@ function App (props) {
             decided to pursue programming with a renewed vigor.
           </Typography>
           <Typography className={classes.bioLast} align='center'>
-            I love simple, functional design with great UX -- and I believe everything needs a <span
+            I love simple, functional design with great UX — and I believe everything needs a <span
             className={classes.darkThemeText} onClick={props.darkThemeSwitch}>dark theme</span>.
           </Typography>
           <Typography className={classes.ornament} align='center' variant='h2'>
