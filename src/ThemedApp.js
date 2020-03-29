@@ -10,7 +10,8 @@ const lightTheme = createMuiTheme({
     type: 'light',
     primary: {
       main: '#444',
-      background: '#fff'
+      background: '#fff',
+      contrastText: '#000'
     }
   }
 })
@@ -20,7 +21,8 @@ const darkTheme = createMuiTheme({
     type: 'dark',
     primary: {
       main: '#444',
-      background: '#1a1a1a'
+      background: '#1a1a1a',
+      contrastText: '#fff'
     }
   }
 })

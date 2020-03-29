@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react'
 import { createStyles, makeStyles, useTheme } from '@material-ui/core/styles'
-import { Grid, Avatar, Typography, Paper } from '@material-ui/core'
+import { Grid, Avatar, Typography, Paper, Theme } from '@material-ui/core'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkIcon from '@material-ui/icons/Link'
 import IconButton from '@material-ui/core/IconButton'
 import Tooltip from '@material-ui/core/Tooltip'
 import Link from '@material-ui/core/Link'
 
-const useStyles = makeStyles((theme) =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      width: '100%'
+      width: '100%',
+      backgroundColor: theme.palette.primary.background
     },
     profileCard: {
       margin: theme.spacing(5),
