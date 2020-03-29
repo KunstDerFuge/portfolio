@@ -53,8 +53,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     sectionPaper: {
       backgroundColor: theme.palette.primary.paper,
-      margin: theme.spacing(5),
-      padding: theme.spacing(3)
+      margin: theme.spacing(5)
     },
     header: {
       color: theme.palette.primary.contrastText,
@@ -143,7 +142,9 @@ const useStyles = makeStyles((theme: Theme) =>
       marginTop: theme.spacing(2),
       marginBottom: theme.spacing(2)
     },
-    descriptionContainer: {},
+    descriptionContainer: {
+      padding: theme.spacing(3)
+    },
     technology: {
       display: 'table-cell',
       marginTop: 'auto'
