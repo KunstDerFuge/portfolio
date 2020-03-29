@@ -331,7 +331,7 @@ function App (props) {
             </Grid>
             <Grid item sm={12} md={6}>
               {
-                props.isDark ?
+                theme.palette.type === 'dark' ?
                   <video autoPlay loop muted className={classes.gif}>
                     <source src='typometry-dark.webm' type='video/webm' />
                   </video>
