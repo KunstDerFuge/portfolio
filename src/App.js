@@ -335,16 +335,12 @@ function App (props) {
               </Grid>
             </Grid>
             <Grid item sm={12} md={6}>
-              {
+              <video autoPlay loop muted className={classes.gif} src={
                 theme.palette.type === 'dark' ?
-                  <video autoPlay loop muted className={classes.gif}>
-                    <source src='typometry-dark.webm' type='video/webm' />
-                  </video>
+                  'typometry-dark.webm'
                   :
-                  <video autoPlay loop muted className={classes.gif}>
-                    <source src='typometry.webm' type='video/webm' />
-                  </video>
-              }
+                  'typometry.webm'
+              } />
             </Grid>
           </Grid>
         </Paper>
