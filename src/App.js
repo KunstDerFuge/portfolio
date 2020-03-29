@@ -205,7 +205,7 @@ function App () {
       <Grid item container alignContent='center'>
         <Paper elevation={avatarElevation} className={classes.profileCard}>
           <Grid item>
-            <Avatar className={classes.profile} variant='circle' src='profile.jpg' />
+            <Avatar alt='Robert Amour' className={classes.profile} variant='circle' src='profile.jpg' />
           </Grid>
           <Grid item className={classes.textContainer}>
             <Typography className={classes.title} variant='h3' align='center'>
