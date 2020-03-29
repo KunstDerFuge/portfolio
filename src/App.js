@@ -33,13 +33,15 @@ const useStyles = makeStyles((theme) =>
     title: {
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
-      fontFeatureSettings: '"liga", "clig"'
+      fontFeatureSettings: '"liga", "clig"',
+      fontDisplay: 'swap'
     },
     subTitle: {
       fontFamily: 'garamond-premier-pro, serif',
       fontStyle: 'italic',
       fontVariantLigatures: 'common-ligatures',
-      fontFeatureSettings: '"liga", "clig"'
+      fontFeatureSettings: '"liga", "clig"',
+      fontDisplay: 'swap'
     },
     projects: {
       marginTop: theme.spacing(5),
@@ -53,33 +55,39 @@ const useStyles = makeStyles((theme) =>
       fontFamily: 'garamond-premier-pro, serif',
       fontStyle: 'italic',
       fontVariantLigatures: 'common-ligatures',
-      fontFeatureSettings: '"liga", "clig", "swsh"'
+      fontFeatureSettings: '"liga", "clig", "swsh"',
+      fontDisplay: 'swap'
     },
     subHeader: {
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
-      fontFeatureSettings: '"liga", "clig"'
+      fontFeatureSettings: '"liga", "clig"',
+      fontDisplay: 'swap'
     },
     ornament: {
       fontFamily: 'garamond-premier-pro, serif',
+      fontDisplay: 'swap',
       margin: '15vh'
     },
     bioHeader: {
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
+      fontDisplay: 'swap',
       marginTop: '10vh',
       marginBottom: theme.spacing(2)
     },
     bioSubHeader: {
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
-      fontFeatureSettings: '"liga", "clig"'
+      fontFeatureSettings: '"liga", "clig"',
+      fontDisplay: 'swap'
     },
     bio: {
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
+      fontDisplay: 'swap',
       marginTop: theme.spacing(15),
       marginLeft: 'auto',
       marginRight: 'auto',
@@ -90,6 +98,7 @@ const useStyles = makeStyles((theme) =>
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
+      fontDisplay: 'swap',
       marginTop: theme.spacing(2),
       marginLeft: 'auto',
       marginRight: 'auto',
@@ -101,6 +110,7 @@ const useStyles = makeStyles((theme) =>
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
       fontSize: '1.4em',
+      fontDisplay: 'swap',
       paddingTop: theme.spacing(2)
     },
     timeline: {
@@ -108,7 +118,8 @@ const useStyles = makeStyles((theme) =>
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
       fontStyle: 'italic',
-      fontSize: '1.2em'
+      fontSize: '1.2em',
+      fontDisplay: 'swap'
     },
     gif: {
       maxWidth: '700px',
@@ -128,6 +139,7 @@ const useStyles = makeStyles((theme) =>
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig", "swsh"',
       fontStyle: 'italic',
+      fontDisplay: 'swap',
       paddingTop: theme.spacing(2)
     },
     technologyItem: {
@@ -135,6 +147,7 @@ const useStyles = makeStyles((theme) =>
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
       fontSize: '1.3em',
+      fontDisplay: 'swap',
       marginLeft: theme.spacing(2),
       width: '100%'
     },
@@ -169,6 +182,7 @@ const useStyles = makeStyles((theme) =>
       fontFeatureSettings: '"liga", "clig", "swsh"',
       fontStyle: 'italic',
       fontSize: '1.5em',
+      fontDisplay: 'swap',
       marginLeft: theme.spacing(4),
       marginRight: theme.spacing(4)
     }
