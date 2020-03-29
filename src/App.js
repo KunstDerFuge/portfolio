@@ -256,12 +256,12 @@ function App () {
                 </Grid>
                 <Grid item>
                   <Tooltip title='Typometry.io'>
-                    <IconButton target='_blank' href='https://typometry.io'>
+                    <IconButton target='_blank' rel='noreferrer' href='https://typometry.io'>
                       <LinkIcon />
                     </IconButton>
                   </Tooltip>
                   <Tooltip title='Check it out on Github'>
-                    <IconButton target='_blank' href='https://github.com/KunstDerFuge/typometry'>
+                    <IconButton target='_blank' rel='noreferrer' href='https://github.com/KunstDerFuge/typometry'>
                       <GitHubIcon />
                     </IconButton>
                   </Tooltip>
@@ -313,12 +313,12 @@ function App () {
                 </Grid>
                 <Grid item>
                   <Tooltip title='eFerret.io'>
-                    <IconButton className={classes.button} target='_blank' href='https://eferret.io'>
+                    <IconButton className={classes.button} target='_blank' rel='noreferrer' href='https://eferret.io'>
                       <LinkIcon />
                     </IconButton>
                   </Tooltip>
                   <Tooltip title='Check it out on Github'>
-                    <IconButton className={classes.button} target='_blank'
+                    <IconButton className={classes.button} target='_blank' rel='noreferrer'
                                 href='https://github.com/KunstDerFuge/eFerret-web-frontend'>
                       <GitHubIcon />
                     </IconButton>
@@ -380,13 +380,13 @@ function App () {
                 </Grid>
                 <Grid item>
                   <Tooltip title='More info'>
-                    <IconButton className={classes.button} target='_blank'
+                    <IconButton className={classes.button} target='_blank' rel='noreferrer'
                                 href='https://www.chrisrentsch.com/home/GW/setup'>
                       <LinkIcon />
                     </IconButton>
                   </Tooltip>
                   <Tooltip title='Check it out on Github'>
-                    <IconButton className={classes.button} target='_blank'
+                    <IconButton className={classes.button} target='_blank' rel='noreferrer'
                                 href='https://github.com/rentcp/Heatwave'>
                       <GitHubIcon />
                     </IconButton>
