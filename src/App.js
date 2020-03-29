@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: theme.palette.primary.background
     },
     profileCard: {
+      backgroundColor: theme.palette.primary.paper,
       margin: theme.spacing(5),
       marginLeft: 'auto',
       marginRight: 'auto',
@@ -51,6 +52,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: theme.spacing(5)
     },
     sectionPaper: {
+      backgroundColor: theme.palette.primary.paper,
       margin: theme.spacing(5),
       padding: theme.spacing(3)
     },
