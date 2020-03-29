@@ -189,7 +189,7 @@ const useStyles = makeStyles((theme) =>
   })
 )
 
-function App () {
+function App (props) {
   const classes = useStyles()
   const theme = useTheme()
   const isMobile = theme.breakpoints.down('sm')
