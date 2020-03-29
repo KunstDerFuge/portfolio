@@ -140,7 +140,8 @@ const useStyles = makeStyles((theme: Theme) =>
       display: 'table-cell',
       verticalAlign: 'middle',
       marginTop: theme.spacing(2),
-      marginBottom: theme.spacing(2)
+      marginBottom: theme.spacing(2),
+      borderRadius: theme.spacing(2)
     },
     descriptionContainer: {
       padding: theme.spacing(3)
