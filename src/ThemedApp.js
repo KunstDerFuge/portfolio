@@ -11,7 +11,8 @@ const lightTheme = createMuiTheme({
     primary: {
       main: '#444',
       background: '#fff',
-      contrastText: '#000'
+      contrastText: '#000',
+      purpleText: '#a08'
     }
   }
 })
@@ -22,7 +23,8 @@ const darkTheme = createMuiTheme({
     primary: {
       main: '#444',
       background: '#222',
-      contrastText: '#fff'
+      contrastText: '#fff',
+      purpleText: '#e0a'
     }
   }
 })

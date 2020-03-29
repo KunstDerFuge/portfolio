@@ -201,7 +201,8 @@ const useStyles = makeStyles((theme: Theme) =>
       marginRight: theme.spacing(4)
     },
     darkThemeText: {
-      color: '#806'
+      color: theme.palette.primary.purpleText,
+      cursor: 'pointer'
     }
   })
 )
