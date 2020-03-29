@@ -32,12 +32,14 @@ const useStyles = makeStyles((theme: Theme) =>
       margin: theme.spacing(5)
     },
     title: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
       fontDisplay: 'swap'
     },
     subTitle: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontStyle: 'italic',
       fontVariantLigatures: 'common-ligatures',
@@ -53,6 +55,7 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: theme.spacing(3)
     },
     header: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontStyle: 'italic',
       fontVariantLigatures: 'common-ligatures',
@@ -60,17 +63,20 @@ const useStyles = makeStyles((theme: Theme) =>
       fontDisplay: 'swap'
     },
     subHeader: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
       fontDisplay: 'swap'
     },
     ornament: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontDisplay: 'swap',
       margin: '15vh'
     },
     bioHeader: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
@@ -79,12 +85,14 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: theme.spacing(2)
     },
     bioSubHeader: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
       fontDisplay: 'swap'
     },
     bio: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
@@ -96,6 +104,7 @@ const useStyles = makeStyles((theme: Theme) =>
       width: '60vw'
     },
     bioLast: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
@@ -107,6 +116,7 @@ const useStyles = makeStyles((theme: Theme) =>
       width: '60vw'
     },
     projectBody: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
@@ -115,6 +125,7 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingTop: theme.spacing(2)
     },
     timeline: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
@@ -136,6 +147,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginTop: 'auto'
     },
     technologyHeader: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig", "swsh"',
@@ -144,6 +156,7 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingTop: theme.spacing(2)
     },
     technologyItem: {
+      color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
@@ -188,7 +201,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginRight: theme.spacing(4)
     },
     darkThemeText: {
-      color: '#a08'
+      color: '#806'
     }
   })
 )
