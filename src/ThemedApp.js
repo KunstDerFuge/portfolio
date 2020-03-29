@@ -12,9 +12,13 @@ const lightTheme = createMuiTheme({
       main: '#444',
       background: '#fff',
       contrastText: '#000',
-      purpleText: '#a08',
-      paper: '#fff'
+      purpleText: '#907',
+      paper: '#fff',
+      bodyLink: '#008'
     }
+  },
+  textDecoration: {
+    purpleText: 'underline dotted'
   }
 })
 
@@ -26,8 +30,12 @@ const darkTheme = createMuiTheme({
       background: '#222',
       contrastText: '#fff',
       purpleText: '#e0a',
-      paper: '#333'
+      paper: '#333',
+      bodyLink: '#e0a'
     }
+  },
+  textDecoration: {
+    purpleText: ''
   }
 })
 

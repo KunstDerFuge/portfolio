@@ -203,9 +203,13 @@ const useStyles = makeStyles((theme: Theme) =>
       marginLeft: theme.spacing(4),
       marginRight: theme.spacing(4)
     },
+    bodyLink: {
+      color: theme.palette.primary.bodyLink
+    },
     darkThemeText: {
       color: theme.palette.primary.purpleText,
-      cursor: 'pointer'
+      cursor: 'pointer',
+      textDecoration: theme.textDecoration.purpleText
     }
   })
 )
@@ -444,7 +448,8 @@ function App (props) {
                 "Project Heatwave" - A data-driven analysis of global warming using atmospheric radiation emission
                 data from NASA's AIRS program. This project gathers and analyzes a large dataset from the NASA AIRS
                 satellite using Pandas and Numpy. Heatwave is a fully open-source project by <a
-                href='https://www.chrisrentsch.com' target='_blank' rel="noopener noreferrer">Chris Rentsch</a>.
+                href='https://www.chrisrentsch.com' target='_blank' rel="noopener noreferrer"
+                className={classes.bodyLink}>Chris Rentsch</a>.
               </Typography>
               <ul className={classes.technologyItem}>
                 <li>Implemented major feature additions and bug fixes over the course of 14 months</li>
