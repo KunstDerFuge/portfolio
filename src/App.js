@@ -211,7 +211,18 @@ const useStyles = makeStyles((theme: Theme) =>
       color: theme.palette.primary.purpleText,
       cursor: 'pointer',
       textDecoration: theme.textDecoration.purpleText
-    }
+    },
+    footerInfo: {
+      color: '#fff',
+      fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: '"liga", "clig", "swsh"',
+      fontStyle: 'italic',
+      fontSize: '1.2em'
+    },
+    footerLink: {
+      color: '#fff'
+    },
   })
 )
 
@@ -632,6 +643,13 @@ function App(props) {
                   href="https://github.com/KunstDerFuge">Github</Link>
             <Link className={classes.link} href="https://www.linkedin.com/in/robert-amour-5716b3105/">LinkedIn</Link>
             <Link className={classes.link} href="Robert-Amour-resume.pdf">Resume</Link>
+          </Grid>
+          <Grid item container justify="center">
+            <Typography className={classes.footerInfo}>
+              This website was built from scratch using React and Material-UI and is itself <a
+              href="https://github.com/KunstDerFuge/portfolio" target="_blank" rel="noreferrer"
+              className={classes.footerLink}>open source</a>!
+            </Typography>
           </Grid>
           <Grid item container justify="center">
             <Link className={classes.link} href="#">Back to top</Link>
