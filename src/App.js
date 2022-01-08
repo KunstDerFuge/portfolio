@@ -579,7 +579,7 @@ function App(props) {
                 <Grid item>
                   <Tooltip title="More info">
                     <IconButton className={classes.button} target="_blank" rel="noreferrer"
-                                href="https://www.chrisrentsch.com/home/GW/setup">
+                                href="https://www.chrisrentsch.com/s/agw/setup">
                       <LinkIcon/>
                     </IconButton>
                   </Tooltip>
