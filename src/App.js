@@ -525,10 +525,15 @@ function App(props) {
                 on eBay. Utilizing live data from the eBay API, it notifies users of interesting items within seconds
                 after they are posted.
               </Typography>
+              <Typography variant="body1" className={classes.projectBody}>
+                I created eFerret in 2017 to assist with my (at the time) vintage fountain pen restoration hobby. Now,
+                hundreds of people around the world use it to find the best deals on eBay and locate hard-to-find
+                inventory for their businesses.
+              </Typography>
               <ul className={classes.technologyItem}>
                 <li>1000+ installs on Google Play</li>
-                <li>~ 75 daily active users, 250 monthly</li>
-                <li>Drives over $450,000 in sales to eBay every year</li>
+                <li>~ 200 daily active users, 300 monthly</li>
+                <li>Drives over $1.6 million in sales to eBay every year</li>
                 <li>Processes ~1 million eBay API requests per day</li>
               </ul>
               <Grid item className={classes.technology}>
