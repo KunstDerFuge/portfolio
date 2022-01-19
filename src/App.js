@@ -486,6 +486,9 @@ function App(props) {
                   Python / Django
                 </Typography>
                 <Typography className={classes.technologyItem} variant="subtitle1">
+                  Postgres + Elasticsearch
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
                   Scrapy
                 </Typography>
                 <Typography className={classes.technologyItem} variant="subtitle1">
