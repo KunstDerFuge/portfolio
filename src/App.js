@@ -395,7 +395,7 @@ function App(props) {
               <Typography variant="body1" className={classes.projectBody}>
                 Along with a professional data scientist and a QAnon subject matter expert, I participated in an
                 in-depth investigation of metadata on images posted by the anonymous imageboard user “Q” who had been
-                gaining an increasingly alarming grip on U.S. politics since 2018.
+                gaining an increasingly alarming grip on U.S. politics since emerging in late 2017.
               </Typography>
               <Typography variant="body1" className={classes.projectBody}>
                 Our investigation successfully located Q's activity to several known time zones including Pacific and
