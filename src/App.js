@@ -2,6 +2,8 @@ import React, {useEffect} from 'react'
 import {createStyles, makeStyles, useTheme} from '@material-ui/core/styles'
 import {Grid, Avatar, Typography, Paper, Theme} from '@material-ui/core'
 import GitHubIcon from '@material-ui/icons/GitHub'
+import AppleIcon from '@material-ui/icons/Apple'
+import ShopIcon from '@material-ui/icons/Shop'
 import LinkIcon from '@material-ui/icons/Link'
 import IconButton from '@material-ui/core/IconButton'
 import Tooltip from '@material-ui/core/Tooltip'
@@ -121,7 +123,7 @@ const useStyles = makeStyles((theme: Theme) =>
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
-      fontSize: '1.4em',
+      fontSize: '1.3em',
       fontDisplay: 'swap',
       paddingTop: theme.spacing(2)
     },
@@ -160,14 +162,40 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingTop: theme.spacing(2)
     },
     technologyItem: {
+      listStyleType: 'square',
       color: theme.palette.primary.contrastText,
       fontFamily: 'garamond-premier-pro, serif',
       fontVariantLigatures: 'common-ligatures',
       fontFeatureSettings: '"liga", "clig"',
-      fontSize: '1.3em',
+      fontSize: '1.1em',
       fontDisplay: 'swap',
       marginLeft: theme.spacing(2),
       width: '100%'
+    },
+    citationHeader: {
+      color: theme.palette.primary.contrastText,
+      fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'none',
+      fontFeatureSettings: 'inherit',
+      fontStyle: 'italic',
+      fontDisplay: 'swap',
+      paddingTop: theme.spacing(2)
+    },
+    citationItem: {
+      listStyle: 'outside',
+      lineHeight: '1.6',
+      listStyleType: 'square',
+      color: theme.palette.primary.contrastText,
+      fontFamily: 'garamond-premier-pro, serif',
+      fontVariantLigatures: 'common-ligatures',
+      fontFeatureSettings: '"liga", "clig"',
+      fontSize: '1.0em',
+      fontDisplay: 'swap',
+      paddingLeft: theme.spacing(4),
+      width: '100%'
+    },
+    citationLink: {
+      textDecoration: "none"
     },
     spacer: {
       display: 'table-cell',
@@ -296,14 +324,365 @@ function App(props) {
         </Typography>
         <Paper elevation={4} className={classes.sectionPaper}>
           <Grid item container direction="row">
+            <Grid item container sm={12} md={6} alignItems="stretch"
+                  className={classes.descriptionContainer}>
+              <Grid item container>
+                <Grid item>
+                  <Typography className={classes.subHeader} variant="h4">
+                    eFerret (React Native version)
+                  </Typography>
+                  <Typography className={classes.timeline}>
+                    December 2022 - Present
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Tooltip title="eFerret.io">
+                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
+                                href="https://eferret.io">
+                      <LinkIcon/>
+                    </IconButton>
+                  </Tooltip>
+                  <Tooltip title="Check it out on the Play store">
+                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
+                                href="https://play.google.com/store/apps/details?id=io.eferret.eferret">
+                      <ShopIcon/>
+                    </IconButton>
+                  </Tooltip>
+                  <Tooltip title="Check it out on the App store">
+                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
+                                href="https://apps.apple.com/us/app/eferret/id1658695827">
+                      <AppleIcon/>
+                    </IconButton>
+                  </Tooltip>
+                </Grid>
+              </Grid>
+              <a target="_blank" href="https://play.google.com/store/apps/details?id=io.eferret.eferret"
+                 rel="noopener noreferrer">
+                <img className={classes.imageButton} alt="Get it on Google Play" src="google-play.png"/>
+              </a>
+              <Typography variant="body1" className={classes.projectBody}>
+                eFerret is a cross-platform React Native app and modern web app (eFerret.io) for finding great deals
+                and rare items on eBay. Utilizing live data from the eBay API, it notifies users of
+                interesting items within seconds after they are posted.
+              </Typography>
+              <Typography variant="body1" className={classes.projectBody}>
+                I created eFerret in 2017 to assist with my (at the time) vintage fountain pen restoration hobby. Now,
+                hundreds of people around the world use it to find the best deals on eBay and locate hard-to-find
+                inventory for their businesses.
+              </Typography>
+              <ul className={classes.technologyItem}>
+                <li>Top 30 highest-grossing Shopping apps of 2024</li>
+                <li>5000+ installs on Google Play</li>
+                <li>~ 200 daily active users, 300 monthly</li>
+                <li>Drives over $1.6 million in sales to eBay each year</li>
+                <li>Processes ~1 million eBay API requests per day</li>
+              </ul>
+              <Grid item className={classes.technology}>
+                <Typography className={classes.technologyHeader} variant="h5">
+                  Technologies used:
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
+                  Java (native Android)
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
+                  MySQL (eventually replaced with Postgres)
+                </Typography>
+                <Typography className={classes.technologyItem} variant={"subtitle1"}>
+                  Flask / Python (eventually replaced with Django)
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid item sm={12} md={6}>
+              <video autoPlay loop muted className={classes.gif}>
+                <source src="eferret.webm" type="video/webm"/>
+              </video>
+            </Grid>
+          </Grid>
+        </Paper>
+        <Paper elevation={4} className={classes.sectionPaper}>
+          <Grid item container direction="row">
             <Grid item container sm={12} md={6} alignItems="stretch" className={classes.descriptionContainer}>
+              <Grid item container>
+                <Grid item>
+                  <Typography className={classes.subHeader} variant="h4">
+                    dChan - Q Origins Project archives
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Tooltip title="Visit the archives (content warning)">
+                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
+                                href="https://dchan.qorigins.org/">
+                      <LinkIcon/>
+                    </IconButton>
+                  </Tooltip>
+                  <Tooltip title="Check it out on Github">
+                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
+                                href="https://github.com/KunstDerFuge/dChan">
+                      <GitHubIcon/>
+                    </IconButton>
+                  </Tooltip>
+                </Grid>
+              </Grid>
+              <Typography className={classes.timeline}>
+                June 2021 - present
+              </Typography>
+              <Typography variant="body1" className={classes.projectBody}>
+                On behalf of the <a href="https://twitter.com/QOrigins/" target="_blank"
+                                    rel="noreferrer"
+                                    className={classes.bodyLink}>Q Origins
+                Project</a>, I created the largest archive of <a
+                href="https://en.wikipedia.org/wiki/QAnon"
+                target="_blank" rel="noreferrer"
+                className={classes.bodyLink}>QAnon</a> content that
+                exists today. With over 19,000,000 posts from the Q boards on 4chan, 8chan, and 8kun, as well as 1.3
+                million posts from Reddit's QAnon communities before they were <a className={classes.bodyLink}
+                                                                                  href="https://en.wikipedia.org/wiki/Controversial_Reddit_communities#QAnon-related_subs">banned
+                site-wide in 2018</a>, this archive provides much-needed data to extremism experts, researchers, and
+                scholars of this
+                underrepresented field.
+              </Typography>
+              <Typography variant="body1" className={classes.projectBody}>
+                Utilizing specialized Scrapy spiders, the project automatically scrapes relevant content from 8kun in
+                realtime, providing vital insights on online extremism. Posts are saved in a Postgres database and
+                processed into an Elasticsearch index for rapid search and <a
+                href="https://dchan.qorigins.org/timeseries/" target="_blank" rel="noreferrer"
+                className={classes.bodyLink}>time series analysis</a>.
+              </Typography>
+              <Grid item className={classes.technology}>
+                <Typography className={classes.citationHeader} variant="h5">
+                  Cited in:
+                </Typography>
+                <ul className={classes.citationItem}>
+                  <li>
+                    Ebner, J. (2023). Going Mainstream: How Extremists Are Taking Over. United Kingdom: Ithaka Press
+                    Limited.
+                  </li>
+                  <li>
+                    Inwood, O., Ippolito, H., & Laminack, M. (2023). CONFRONTING AND DEMYSTIFYING HARMFUL PARTICIPATORY
+                    CULTURES. AoIR Selected Papers of Internet Research, 2022.
+                  </li>
+                  <li>
+                    Björk, E. (2023). Achievements of the Rational: A comparative argumentation analysis of witch hunts
+                    and conspiracy theories.
+                  </li>
+                  <li>
+                    Young H, Boucher GM. (2022). Authoritarian Politics and Conspiracy Fictions: The Case of QAnon.
+                    Humanities.
+                  </li>
+                  <li>
+                    El Khalil, Khaoula (2022). Cadrage en période de crise: réponses à la COVID-19 d’influenceurs de la
+                    droite radicale au Québec
+                  </li>
+                </ul>
+              </Grid>
+              <Grid item className={classes.technology}>
+                <Typography className={classes.technologyHeader} variant="h5">
+                  Technologies used:
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
+                  Python / Django
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
+                  Postgres + Elasticsearch
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
+                  Scrapy
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
+                  Pandas
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
+                  React + d3
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid item sm={12} md={6}>
+              <img src="timeseries.png" className={classes.gif}/>
+            </Grid>
+          </Grid>
+        </Paper>
+        <Paper elevation={4} className={classes.sectionPaper}>
+          <Grid item container direction="row">
+            <Grid item container sm={12} md={6} alignItems="stretch"
+                  className={classes.descriptionContainer}>
+              <Grid item container>
+                <Grid item>
+                  <Typography className={classes.subHeader} variant="h4">
+                    “Where in the World is Q? Clues from Image Metadata”
+                  </Typography>
+                  <Typography className={classes.subTitle}>
+                    By Abigail W. Xavier, Robert Amour and the Q Origins Project ( <a
+                    href="https://twitter.com/QOrigins/" target="_blank" rel="noreferrer"
+                    className={classes.bodyLink}>@QOrigins</a>)
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Tooltip title="See the article">
+                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
+                                href="https://www.bellingcat.com/news/rest-of-world/2021/05/10/where-in-the-world-is-q-clues-from-image-metadata/">
+                      <LinkIcon/>
+                    </IconButton>
+                  </Tooltip>
+                  <Tooltip title="Check it out on Github">
+                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
+                                href="https://github.com/abigailxyzw/image-metadata">
+                      <GitHubIcon/>
+                    </IconButton>
+                  </Tooltip>
+                </Grid>
+              </Grid>
+              <Typography className={classes.timeline}>
+                January 2021 - May 2021
+              </Typography>
+              <Typography variant="body1" className={classes.projectBody}>
+                As part of the <a href="https://qoriginsproject.org" target="_blank" rel="noreferrer"
+                                  className={classes.bodyLink}>Q Origins
+                Project</a>, I helped discover the first forensic evidence of the whereabouts, and thus identity, of
+                “Q”, the anonymous online persona behind the <a href="https://en.wikipedia.org/wiki/QAnon"
+                                                                target="_blank" rel="noreferrer"
+                                                                className={classes.bodyLink}>QAnon</a> conspiracy
+                theory.
+              </Typography>
+              <Typography variant="body1" className={classes.projectBody}>
+                Along with a professional data scientist and a QAnon subject matter expert, I participated in a
+                detailed investigation of metadata on images posted by the anonymous imageboard user “Q” who had been
+                gaining an increasingly alarming grip on U.S. politics since emerging in late 2017.
+              </Typography>
+              <Typography variant="body1" className={classes.projectBody}>
+                Our investigation successfully located Q's activity to several known time zones including Pacific and
+                UTC+8 (Asia), greatly narrowing down the pool of potential suspects. Our investigation
+                was <a
+                className={classes.bodyLink}
+                href="https://www.bellingcat.com/news/rest-of-world/2021/05/10/where-in-the-world-is-q-clues-from-image-metadata">
+                published in Bellingcat</a> after a lengthy and thorough review and fact checking process.
+              </Typography>
+              <ul className={classes.technologyItem}>
+                <li>Worked as part of a three-person team who made this discovery and wrote up our findings</li>
+                <li>Created data visualizations telling the story of our data</li>
+              </ul>
+              <Grid item className={classes.technology}>
+                <Typography className={classes.citationHeader} variant="h5">
+                  Cited in:
+                </Typography>
+                <ul className={classes.citationItem}>
+                  <li>
+                    Austin, M.W. and Bock, G.L. (2023). QAnon, Chaos, and the Cross: Christianity and Conspiracy
+                    Theories. United Kingdom: Wm. B. Eerdmans Publishing Company.
+                  </li>
+                  <li>
+                    Donovan, J., Dreyfuss, E., Friedberg, B. (2022). Meme Wars: The Untold Story of the Online Battles
+                    Upending Democracy in America. United Kingdom: Bloomsbury Publishing.
+                  </li>
+                  <li>
+                    Tong, J. (2022). Data for Journalism: Between Transparency and Accountability. United Kingdom:
+                    Taylor & Francis.
+                  </li>
+                </ul>
+              </Grid>
+              <Grid item className={classes.technology}>
+                <Typography className={classes.technologyHeader} variant="h5">
+                  Technologies used:
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
+                  Python
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
+                  Pandas
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
+                  React + d3 (for the interactive dataviz, visible <a
+                  href="https://bellingcat.github.io/q-image-metadata-viz/" target="_blank" rel="noreferrer"
+                  className={classes.bodyLink}>here</a>;
+                  source&nbsp;
+                  <a href="https://github.com/KunstDerFuge/q-interactive-scatterplot" target="_blank"
+                     rel="noreferrer" className={classes.bodyLink}>here</a>)
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid item sm={12} md={6}>
+              <img src="q-metadata-viz.png" className={classes.gif}/>
+            </Grid>
+          </Grid>
+        </Paper>
+        <Paper elevation={4} className={classes.sectionPaper}>
+          <Grid item container direction="row">
+            <Grid item container sm={12} md={6} alignItems="stretch"
+                  className={classes.descriptionContainer}>
+              <Grid item container>
+                <Grid item>
+                  <Typography className={classes.subHeader} variant="h4">
+                    Quærendo
+                  </Typography>
+                  <Typography className={classes.timeline}>
+                    May 2020 - September 2020
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Tooltip title="Quaerendo.org">
+                    <IconButton target="_blank" rel="noreferrer" href="https://quaerendo.org">
+                      <LinkIcon/>
+                    </IconButton>
+                  </Tooltip>
+                  <Tooltip title="Check it out on Github">
+                    <IconButton target="_blank" rel="noreferrer"
+                                href="https://github.com/KunstDerFuge/Quaerendo">
+                      <GitHubIcon/>
+                    </IconButton>
+                  </Tooltip>
+                </Grid>
+              </Grid>
+              <Grid item>
+                <Typography variant="body1" className={classes.projectBody}>
+                  On May 4, 2020, as hospitals worldwide were being hit with the first wave of COVID-19 in a pandemic
+                  that would kill more than one million Americans, a video called "Plandemic" was released online. Full
+                  of false claims and disinformation, it created a wave of panic and skepticism against already flimsy
+                  trust in public health authority in the United States.
+                </Typography>
+                <Typography variant="body1" className={classes.projectBody}>
+                  Within days, the video went viral and attracted millions of views, as medical experts and the fact
+                  checking community lagged behind. Some people resorted to sharing informal fact-checks from experts on
+                  social media platforms such as Reddit and Twitter. This made clear the need for faster, democratized
+                  fact checking. A few days later, the Quærendo project was born.
+                </Typography>
+                <Typography variant="body1" className={classes.projectBody}>
+                  Quærendo was my naive attempt at kicking off a new, democratized form of social media fact checking.
+                  I abandoned this project when Twitter rolled out <a className={classes.bodyLink}
+                                                                      href="https://en.wikipedia.org/wiki/Community_Notes">Community
+                  Notes</a> (née Birdwatch), as I thought it was a (similar, but!) superior solution.
+                </Typography>
+              </Grid>
+              <Grid item className={classes.technology}>
+                <Typography className={classes.technologyHeader} variant="h5">
+                  Frontend:
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
+                  React
+                </Typography>
+                <Typography className={classes.technologyHeader} variant="h5">
+                  Backend:
+                </Typography>
+                <Typography className={classes.technologyItem} variant="subtitle1">
+                  Django + Postgres
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid item sm={12} md={6}>
+              <video autoPlay loop muted className={classes.gif}
+                     src="Quaerendo.webm"/>
+            </Grid>
+          </Grid>
+        </Paper>
+        <Paper elevation={4} className={classes.sectionPaper}>
+          <Grid item container direction="row">
+            <Grid item container sm={12} md={6} alignItems="stretch"
+                  className={classes.descriptionContainer}>
               <Grid item container>
                 <Grid item>
                   <Typography className={classes.subHeader} variant="h4">
                     Typometry
                   </Typography>
                   <Typography className={classes.timeline}>
-                    October 2018 - present
+                    October 2018 - June 2020
                   </Typography>
                 </Grid>
                 <Grid item>
@@ -313,7 +692,8 @@ function App(props) {
                     </IconButton>
                   </Tooltip>
                   <Tooltip title="Check it out on Github">
-                    <IconButton target="_blank" rel="noreferrer" href="https://github.com/KunstDerFuge/typometry">
+                    <IconButton target="_blank" rel="noreferrer"
+                                href="https://github.com/KunstDerFuge/typometry">
                       <GitHubIcon/>
                     </IconButton>
                   </Tooltip>
@@ -347,178 +727,28 @@ function App(props) {
               </Grid>
             </Grid>
             <Grid item sm={12} md={6}>
-              <video autoPlay loop muted className={classes.gif} src={
-                theme.palette.type === 'dark' ?
-                  'typometry-dark.webm'
-                  :
-                  'typometry.webm'
-              }/>
+              <video autoPlay loop muted className={classes.gif}
+                     src={theme.palette.type === 'dark' ? 'typometry-dark.webm' : 'typometry.webm'}/>
             </Grid>
           </Grid>
         </Paper>
         <Paper elevation={4} className={classes.sectionPaper}>
           <Grid item container direction="row">
-            <Grid item container sm={12} md={6} alignItems="stretch" className={classes.descriptionContainer}>
+            <Grid item container sm={12} md={6} alignItems="stretch"
+                  className={classes.descriptionContainer}>
               <Grid item container>
                 <Grid item>
                   <Typography className={classes.subHeader} variant="h4">
-                    “Where in the World is Q? Clues from Image Metadata”
+                    eFerret (Original Android version)
                   </Typography>
                   <Typography className={classes.timeline}>
-                    January 2021 - May 2021
-                  </Typography>
-                </Grid>
-                <Grid item>
-                  <Tooltip title="See the article">
-                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
-                                href="https://www.bellingcat.com/news/rest-of-world/2021/05/10/where-in-the-world-is-q-clues-from-image-metadata/">
-                      <LinkIcon/>
-                    </IconButton>
-                  </Tooltip>
-                  <Tooltip title="Check it out on Github">
-                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
-                                href="https://github.com/abigailxyzw/image-metadata">
-                      <GitHubIcon/>
-                    </IconButton>
-                  </Tooltip>
-                </Grid>
-              </Grid>
-              <Typography variant="body1" className={classes.projectBody}>
-                As part of the <a href="https://twitter.com/QOrigins/" target="_blank" rel="noreferrer"
-                                  className={classes.bodyLink}>Q Origins
-                Project</a>, I helped discover the first forensic evidence of the whereabouts, and thus identity, of
-                “Q”, the anonymous online persona behind the <a href="https://en.wikipedia.org/wiki/QAnon"
-                                                                target="_blank" rel="noreferrer"
-                                                                className={classes.bodyLink}>QAnon</a> conspiracy
-                theory.
-              </Typography>
-              <Typography variant="body1" className={classes.projectBody}>
-                Along with a professional data scientist and a QAnon subject matter expert, I participated in an
-                in-depth investigation of metadata on images posted by the anonymous imageboard user “Q” who had been
-                gaining an increasingly alarming grip on U.S. politics since emerging in late 2017.
-              </Typography>
-              <Typography variant="body1" className={classes.projectBody}>
-                Our investigation successfully located Q's activity to several known time zones including Pacific and
-                UTC+8 (Asia), greatly narrowing down the pool of potential suspects. Subsequently, the investigation was
-                published by Bellingcat, who style themselves as an “An Intelligence Agency for the People” and publish
-                open source investigations impacting world geopolitics.
-              </Typography>
-              <ul className={classes.technologyItem}>
-                <li>Worked as part of a three-person team who made this discovery and wrote up our findings</li>
-                <li>Created data visualizations telling the story of our data</li>
-              </ul>
-              <Grid item className={classes.technology}>
-                <Typography className={classes.technologyHeader} variant="h5">
-                  Technologies used:
-                </Typography>
-                <Typography className={classes.technologyItem} variant="subtitle1">
-                  Python
-                </Typography>
-                <Typography className={classes.technologyItem} variant="subtitle1">
-                  Pandas
-                </Typography>
-                <Typography className={classes.technologyItem} variant="subtitle1">
-                  React + d3 (for the interactive dataviz, visible <a
-                  href="https://bellingcat.github.io/q-image-metadata-viz/" target="_blank" rel="noreferrer"
-                  className={classes.bodyLink}>here</a>;
-                  source&nbsp;
-                  <a href="https://github.com/KunstDerFuge/q-interactive-scatterplot" target="_blank"
-                     rel="noreferrer" className={classes.bodyLink}>here</a>)
-                </Typography>
-              </Grid>
-            </Grid>
-            <Grid item sm={12} md={6}>
-              <img src="q-metadata-viz.png" className={classes.gif}/>
-            </Grid>
-          </Grid>
-        </Paper>
-        <Paper elevation={4} className={classes.sectionPaper}>
-          <Grid item container direction="row">
-            <Grid item container sm={12} md={6} alignItems="stretch" className={classes.descriptionContainer}>
-              <Grid item container>
-                <Grid item>
-                  <Typography className={classes.subHeader} variant="h4">
-                    dChan - Q Origins Project archives
-                  </Typography>
-                  <Typography className={classes.timeline}>
-                    June 2021 - present
-                  </Typography>
-                </Grid>
-                <Grid item>
-                  <Tooltip title="Visit the archives (content warning)">
-                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
-                                href="https://dchan.qorigins.org/">
-                      <LinkIcon/>
-                    </IconButton>
-                  </Tooltip>
-                  <Tooltip title="Check it out on Github">
-                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
-                                href="https://github.com/KunstDerFuge/dChan">
-                      <GitHubIcon/>
-                    </IconButton>
-                  </Tooltip>
-                </Grid>
-              </Grid>
-              <Typography variant="body1" className={classes.projectBody}>
-                On behalf of the <a href="https://twitter.com/QOrigins/" target="_blank" rel="noreferrer"
-                                    className={classes.bodyLink}>Q Origins
-                Project</a>, I created the largest archive of <a href="https://en.wikipedia.org/wiki/QAnon"
-                                                                 target="_blank" rel="noreferrer"
-                                                                 className={classes.bodyLink}>QAnon</a> content that
-                exists today. With over 14,000,000 posts from the Q boards on 4chan, 8chan, and 8kun (Reddit data coming
-                soon), this archive provides much-needed data to extremism experts, researchers, and scholars of this
-                underrepresented field.
-              </Typography>
-              <Typography variant="body1" className={classes.projectBody}>
-                Utilizing specialized Scrapy spiders, the project automatically scrapes relevant content from 8kun in
-                realtime, providing vital insights on online extremism. Posts are saved in a Postgres database and
-                processed into an Elasticsearch index for rapid search and <a
-                href="https://dchan.qorigins.org/timeseries/" target="_blank" rel="noreferrer"
-                className={classes.bodyLink}>time series analysis</a>.
-              </Typography>
-              <ul className={classes.technologyItem}>
-              </ul>
-              <Grid item className={classes.technology}>
-                <Typography className={classes.technologyHeader} variant="h5">
-                  Technologies used:
-                </Typography>
-                <Typography className={classes.technologyItem} variant="subtitle1">
-                  Python / Django
-                </Typography>
-                <Typography className={classes.technologyItem} variant="subtitle1">
-                  Postgres + Elasticsearch
-                </Typography>
-                <Typography className={classes.technologyItem} variant="subtitle1">
-                  Scrapy
-                </Typography>
-                <Typography className={classes.technologyItem} variant="subtitle1">
-                  Pandas
-                </Typography>
-                <Typography className={classes.technologyItem} variant="subtitle1">
-                  React + d3
-                </Typography>
-              </Grid>
-            </Grid>
-            <Grid item sm={12} md={6}>
-              <img src="timeseries.png" className={classes.gif}/>
-            </Grid>
-          </Grid>
-        </Paper>
-        <Paper elevation={4} className={classes.sectionPaper}>
-          <Grid item container direction="row">
-            <Grid item container sm={12} md={6} alignItems="stretch" className={classes.descriptionContainer}>
-              <Grid item container>
-                <Grid item>
-                  <Typography className={classes.subHeader} variant="h4">
-                    eFerret
-                  </Typography>
-                  <Typography className={classes.timeline}>
-                    December 2017 - present
+                    December 2017 - December 2022
                   </Typography>
                 </Grid>
                 <Grid item>
                   <Tooltip title="eFerret.io">
-                    <IconButton className={classes.button} target="_blank" rel="noreferrer" href="https://eferret.io">
+                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
+                                href="https://eferret.io">
                       <LinkIcon/>
                     </IconButton>
                   </Tooltip>
@@ -535,39 +765,25 @@ function App(props) {
                 <img className={classes.imageButton} alt="Get it on Google Play" src="google-play.png"/>
               </a>
               <Typography variant="body1" className={classes.projectBody}>
-                eFerret is a native Android app and modern web app (eFerret.io) for finding great deals and rare items
-                on eBay. Utilizing live data from the eBay API, it notifies users of interesting items within seconds
-                after they are posted.
-              </Typography>
-              <Typography variant="body1" className={classes.projectBody}>
-                I created eFerret in 2017 to assist with my (at the time) vintage fountain pen restoration hobby. Now,
-                hundreds of people around the world use it to find the best deals on eBay and locate hard-to-find
-                inventory for their businesses.
+                The original version of my now cross-platform app. Many
+                users <strike>suffered</strike> humored my whimsical UI and
+                graphic design and made this a surprisingly popular app despite my best efforts.
               </Typography>
               <ul className={classes.technologyItem}>
-                <li>1000+ installs on Google Play</li>
-                <li>~ 200 daily active users, 300 monthly</li>
-                <li>Drives over $1.6 million in sales to eBay every year</li>
-                <li>Processes ~1 million eBay API requests per day</li>
+                <li>5000+ installs on Google Play</li>
               </ul>
               <Grid item className={classes.technology}>
                 <Typography className={classes.technologyHeader} variant="h5">
-                  Frontend:
+                  Technologies used:
                 </Typography>
                 <Typography className={classes.technologyItem} variant="subtitle1">
-                  React + Typescript (web)
+                  Java (native Android)
                 </Typography>
                 <Typography className={classes.technologyItem} variant="subtitle1">
-                  Java (Android)
+                  MySQL (eventually replaced with Postgres)
                 </Typography>
-                <Typography className={classes.technologyHeader} variant="h5">
-                  Backend:
-                </Typography>
-                <Typography className={classes.technologyItem} variant="subtitle1">
-                  Django + Postgres + Django Rest Framework
-                </Typography>
-                <Typography className={classes.technologyItem}>
-                  Celery / Redis task scheduling for push notification processing
+                <Typography className={classes.technologyItem} variant={"subtitle1"}>
+                  Flask / Python (eventually replaced with Django)
                 </Typography>
               </Grid>
             </Grid>
@@ -580,7 +796,8 @@ function App(props) {
         </Paper>
         <Paper elevation={4} className={classes.sectionPaper}>
           <Grid item container direction="row">
-            <Grid item container sm={12} md={6} alignItems="stretch" className={classes.descriptionContainer}>
+            <Grid item container sm={12} md={6} alignItems="stretch"
+                  className={classes.descriptionContainer}>
               <Grid item container>
                 <Grid item>
                   <Typography className={classes.subHeader} variant="h4">
@@ -606,15 +823,19 @@ function App(props) {
                 </Grid>
               </Grid>
               <Typography variant="body1" className={classes.projectBody}>
-                "Project Heatwave" - A data-driven analysis of global warming using atmospheric radiation emission
-                data from NASA's AIRS program. This project gathers and analyzes a large dataset from the NASA AIRS
+                "Project Heatwave" - A data-driven analysis of global warming using atmospheric
+                radiation emission
+                data from NASA's AIRS program. This project gathers and analyzes a large dataset from
+                the NASA AIRS
                 satellite using Pandas and Numpy. Heatwave is a fully open-source project by <a
                 href="https://www.chrisrentsch.com" target="_blank" rel="noopener noreferrer"
                 className={classes.bodyLink}>Chris Rentsch</a>.
               </Typography>
               <ul className={classes.technologyItem}>
                 <li>Implemented major feature additions and bug fixes over the course of 14 months</li>
-                <li>Resulted in several rehires by the client for additional features, fixes, and consultation.</li>
+                <li>Resulted in several rehires by the client for additional features, fixes, and
+                  consultation.
+                </li>
               </ul>
               <Grid item className={classes.technology}>
                 <Typography className={classes.technologyHeader} variant="h5">
@@ -644,7 +865,8 @@ function App(props) {
           <Grid item container justify="center">
             <Link className={classes.link}
                   href="https://github.com/KunstDerFuge">Github</Link>
-            <Link className={classes.link} href="https://www.linkedin.com/in/robert-amour-5716b3105/">LinkedIn</Link>
+            <Link className={classes.link}
+                  href="https://www.linkedin.com/in/robert-amour-5716b3105/">LinkedIn</Link>
             <Link className={classes.link} href="Robert-Amour-resume.pdf">Resume</Link>
           </Grid>
           <Grid item container justify="center">
@@ -659,8 +881,7 @@ function App(props) {
           </Grid>
         </Grid>
       </Paper>
-    </Grid>
-  )
+    </Grid>)
 }
 
 export default App
