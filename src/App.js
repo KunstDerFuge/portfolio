@@ -825,7 +825,7 @@ function App(props) {
                     Heatwave (Freelance)
                   </Typography>
                   <Typography className={classes.timeline}>
-                    April 2018 - present
+                    April 2018 - June 2021
                   </Typography>
                 </Grid>
                 <Grid item>
@@ -847,7 +847,7 @@ function App(props) {
                 className={classes.bodyLink}>Chris Rentsch</a>.
               </Typography>
               <ul className={classes.technologyItem}>
-                <li>Implemented major feature additions and bug fixes over the course of 14 months</li>
+                <li>Implemented major feature additions and bug fixes over the course of several years</li>
                 <li>Resulted in several rehires by the client for additional features, fixes, and
                   consultation.
                 </li>
