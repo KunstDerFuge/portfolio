@@ -382,13 +382,10 @@ function App(props) {
                   Technologies used:
                 </Typography>
                 <Typography className={classes.technologyItem} variant="subtitle1">
-                  Java (native Android)
+                  React Native
                 </Typography>
                 <Typography className={classes.technologyItem} variant="subtitle1">
-                  MySQL (eventually replaced with Postgres)
-                </Typography>
-                <Typography className={classes.technologyItem} variant={"subtitle1"}>
-                  Flask / Python (eventually replaced with Django)
+                  Python / Django + Postgres
                 </Typography>
               </Grid>
             </Grid>
