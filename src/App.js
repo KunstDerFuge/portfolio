@@ -195,7 +195,12 @@ const useStyles = makeStyles((theme: Theme) =>
       width: '100%'
     },
     citationLink: {
-      textDecoration: "none"
+      textDecoration: "none",
+      color: theme.palette.primary.contrastText,
+      '&:hover': {
+        color: theme.palette.primary.bodyLink,
+        textDecoration: theme.textDecoration.purpleText
+      }
     },
     spacer: {
       display: 'table-cell',
@@ -451,24 +456,34 @@ function App(props) {
                 </Typography>
                 <ul className={classes.citationItem}>
                   <li>
-                    Ebner, J. (2023). Going Mainstream: How Extremists Are Taking Over. United Kingdom: Ithaka Press
-                    Limited.
+                    <a className={classes.citationLink}
+                       href="https://www.google.com/books/edition/Going_Mainstream/pHyWzwEACAAJ" target="_blank"
+                       rel="noreferrer">Ebner, J. (2023). Going
+                      Mainstream: How Extremists Are Taking Over. United Kingdom: Ithaka Press
+                      Limited.</a>
                   </li>
                   <li>
-                    Inwood, O., Ippolito, H., & Laminack, M. (2023). CONFRONTING AND DEMYSTIFYING HARMFUL PARTICIPATORY
-                    CULTURES. AoIR Selected Papers of Internet Research, 2022.
+                    <a className={classes.citationLink} href="https://doi.org/10.5210/spir.v2022i0.12957"
+                       target="_blank" rel="noreferrer">Inwood, O., Ippolito, H., & Laminack, M. (2023). CONFRONTING AND
+                      DEMYSTIFYING HARMFUL PARTICIPATORY CULTURES. AoIR Selected Papers of Internet Research, 2022.</a>
                   </li>
                   <li>
-                    Björk, E. (2023). Achievements of the Rational: A comparative argumentation analysis of witch hunts
-                    and conspiracy theories.
+                    <a className={classes.citationLink}
+                       href="http://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1743065&dswid=-1266"
+                       target="_blank" rel="noreferrer">Björk, E. (2023). Achievements of the Rational: A comparative
+                      argumentation analysis of witch hunts and conspiracy theories.</a>
                   </li>
                   <li>
-                    Young H, Boucher GM. (2022). Authoritarian Politics and Conspiracy Fictions: The Case of QAnon.
-                    Humanities.
+                    <a className={classes.citationLink}
+                       href="https://doi.org/10.3390/h11030061"
+                       target="_blank" rel="noreferrer">Young H, Boucher GM. (2022). Authoritarian Politics and
+                      Conspiracy Fictions: The Case of QAnon. Humanities.</a>
                   </li>
                   <li>
-                    El Khalil, Khaoula (2022). Cadrage en période de crise: réponses à la COVID-19 d’influenceurs de la
-                    droite radicale au Québec
+                    <a className={classes.citationLink}
+                       href="https://doi.org/1866/27526"
+                       target="_blank" rel="noreferrer">El Khalil, Khaoula (2022). Cadrage en période de crise: réponses
+                      à la COVID-19 d’influenceurs de la droite radicale au Québec.</a>
                   </li>
                 </ul>
               </Grid>
@@ -563,16 +578,25 @@ function App(props) {
                 </Typography>
                 <ul className={classes.citationItem}>
                   <li>
+                    <a className={classes.citationLink}
+                       href="https://www.google.com/books/edition/QAnon_Chaos_and_the_Cross/EVl-EAAAQBAJ"
+                       target="_blank" rel="noreferrer">
                     Austin, M.W. and Bock, G.L. (2023). QAnon, Chaos, and the Cross: Christianity and Conspiracy
-                    Theories. United Kingdom: Wm. B. Eerdmans Publishing Company.
+                      Theories. United Kingdom: Wm. B. Eerdmans Publishing Company.</a>
                   </li>
                   <li>
-                    Donovan, J., Dreyfuss, E., Friedberg, B. (2022). Meme Wars: The Untold Story of the Online Battles
-                    Upending Democracy in America. United Kingdom: Bloomsbury Publishing.
+                    <a className={classes.citationLink}
+                       href="https://www.google.com/books/edition/Meme_Wars/04l3EAAAQBAJ"
+                       target="_blank" rel="noreferrer">
+                      Donovan, J., Dreyfuss, E., Friedberg, B. (2022). Meme Wars: The Untold Story of the Online Battles
+                      Upending Democracy in America. United Kingdom: Bloomsbury Publishing.</a>
                   </li>
                   <li>
-                    Tong, J. (2022). Data for Journalism: Between Transparency and Accountability. United Kingdom:
-                    Taylor & Francis.
+                    <a className={classes.citationLink}
+                       href="https://www.google.com/books/edition/Data_for_Journalism/Yt0vzwEACAAJ"
+                       target="_blank" rel="noreferrer">
+                      Tong, J. (2022). Data for Journalism: Between Transparency and Accountability. United Kingdom:
+                      Taylor & Francis.</a>
                   </li>
                 </ul>
               </Grid>
@@ -805,12 +829,6 @@ function App(props) {
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Tooltip title="More info">
-                    <IconButton className={classes.button} target="_blank" rel="noreferrer"
-                                href="https://www.chrisrentsch.com/s/agw/setup">
-                      <LinkIcon/>
-                    </IconButton>
-                  </Tooltip>
                   <Tooltip title="Check it out on Github">
                     <IconButton className={classes.button} target="_blank" rel="noreferrer"
                                 href="https://github.com/rentcp/Heatwave">
@@ -878,7 +896,8 @@ function App(props) {
           </Grid>
         </Grid>
       </Paper>
-    </Grid>)
+    </Grid>
+)
 }
 
 export default App
