@@ -579,16 +579,24 @@ function App(props) {
                 <ul className={classes.citationItem}>
                   <li>
                     <a className={classes.citationLink}
+                       href="https://en.wikipedia.org/wiki/QAnon#Identity_of_Q"
+                       target="_blank" rel="noreferrer">
+                      Wikipedia: QAnon -- Identity of Q
+                    </a>
+                  </li>
+                  <li>
+                    <a className={classes.citationLink}
                        href="https://www.google.com/books/edition/QAnon_Chaos_and_the_Cross/EVl-EAAAQBAJ"
                        target="_blank" rel="noreferrer">
-                    Austin, M.W. and Bock, G.L. (2023). QAnon, Chaos, and the Cross: Christianity and Conspiracy
+                      Austin, M.W. and Bock, G.L. (2023). QAnon, Chaos, and the Cross: Christianity and Conspiracy
                       Theories. United Kingdom: Wm. B. Eerdmans Publishing Company.</a>
                   </li>
                   <li>
                     <a className={classes.citationLink}
                        href="https://www.google.com/books/edition/Meme_Wars/04l3EAAAQBAJ"
                        target="_blank" rel="noreferrer">
-                      Donovan, J., Dreyfuss, E., Friedberg, B. (2022). Meme Wars: The Untold Story of the Online Battles
+                      Donovan, J., Dreyfuss, E., Friedberg, B. (2022). Meme Wars: The Untold Story of the Online
+                      Battles
                       Upending Democracy in America. United Kingdom: Bloomsbury Publishing.</a>
                   </li>
                   <li>
@@ -847,7 +855,7 @@ function App(props) {
                 className={classes.bodyLink}>Chris Rentsch</a>.
               </Typography>
               <ul className={classes.technologyItem}>
-                <li>Implemented major feature additions and bug fixes over the course of several years</li>
+                <li>Implemented major feature additions and bug fixes over the course of several years/</li>
                 <li>Resulted in several rehires by the client for additional features, fixes, and
                   consultation.
                 </li>
@@ -897,7 +905,7 @@ function App(props) {
         </Grid>
       </Paper>
     </Grid>
-)
+  )
 }
 
 export default App
