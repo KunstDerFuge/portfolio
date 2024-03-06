@@ -581,7 +581,7 @@ function App(props) {
                     <a className={classes.citationLink}
                        href="https://en.wikipedia.org/wiki/QAnon#Identity_of_Q"
                        target="_blank" rel="noreferrer">
-                      Wikipedia: QAnon -- Identity of Q
+                      Wikipedia: QAnon — Identity of Q
                     </a>
                   </li>
                   <li>
