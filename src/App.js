@@ -511,7 +511,7 @@ function App(props) {
                     “Where in the World is Q? Clues from Image Metadata”
                   </Typography>
                   <Typography className={classes.subTitle}>
-                    By Abigail W. Xavier, Robert Amour and the Q Origins Project ( <a
+                    By Abigail W. Xavier, Robert Amour and the Q Origins Project (<a
                     href="https://twitter.com/QOrigins/" target="_blank" rel="noreferrer"
                     className={classes.bodyLink}>@QOrigins</a>)
                   </Typography>
